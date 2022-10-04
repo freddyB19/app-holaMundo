@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkapp_holamundo=self.webpackChunkapp_holamundo||[]).push([[747],{646:(o,s,a)=>{var e=a(486),n=a.n(e);console.log(n().join(["Hola","desde","another.css"]," "))}},o=>{o.O(0,[712],(()=>(646,o(o.s=646)))),o.O()}]);
