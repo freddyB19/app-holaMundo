@@ -3,7 +3,6 @@ import ValidationPasswordConfi from "./Passwords/PasswordConfi";
 import ValidationUsername from "./Username/Username";
 import ValidationNameAndLastNameAndEmail from "./Others/EmailNameLastName";
 
-
 class ManagerValidationInpust {
   static apply(validation, input){
     return validation.is_inputValid(input);
@@ -42,7 +41,6 @@ class Register{
     let allValidations = ManagerFormInputsValidations.apply(FormInputsValidations, this.form);
     return allValidations;
   }
-
 }
 
 

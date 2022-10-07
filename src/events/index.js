@@ -1,11 +1,14 @@
 import navModuleTabLogin from "./functions/navModuleTabLogin";
 import navModuleTab from "./functions/navModuleTab";
-import validationLoginPassword from "./functions/validationPassLogin";
-import validationEmailLogin from "./functions/validationEmailLogin";
+
 import logout from "./functions/logout";
 import login from "./functions/login";
 import register from "./functions/register";
 import accessInvalid from "./functions/accessInvalid";
+
+
+import validationLoginPassword from "./functions/validationPassLogin";
+import validationEmailLogin from "./functions/validationEmailLogin";
 
 
 

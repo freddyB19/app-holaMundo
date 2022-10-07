@@ -25,10 +25,8 @@ const login = async (eve) => {
 
   try {
     let data = await user_login.is_valid();
-    // localStore.setItem("redirect", "/" + location.hash);
     DataUser.saveSession(data);
     DataUser.saveLocal(data);
-    // redirect();
     location.reload();
 
   } catch (e) {

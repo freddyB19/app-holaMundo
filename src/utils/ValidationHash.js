@@ -1,5 +1,6 @@
 const VALIDHASH = [
   "introduccion/1",
+  "introduccion/1/introduccion-01/12",
 
 
   "entidades-primitivas/2",

@@ -1,10 +1,5 @@
 import DataUser from "../../utils/Login/DataUser";
-
-const formatearFecha = (fecha) => {
-  const format = new Date(fecha);
-  return `${format.toLocaleDateString()} ${format.toLocaleTimeString()}`;
-}
-
+import formatearFecha from "../../utils/functions/formatearFecha";
 
 
 const PanelHomeLogin = () => {
@@ -41,7 +36,7 @@ const PanelHomeLogin = () => {
               <td>${user.last_name.toUpperCase()}</td>
               <th scope="row">${formatearFecha(user.time.date_joined)}</th>
               <th scope="row">${formatearFecha(user.time.last_login)}</th>
-              
+
             </tr>
             <tr>
             </tr>
@@ -60,7 +55,7 @@ const PanelHomeLogin = () => {
           <tr>
             <td>
               <div class="progress" style="height: 20px;">
-                <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar" aria-label="Example with label" style="width: 12%;" aria-valuenow="12" aria-valuemin="0" aria-valuemax="100">12%</div>
+                <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar" aria-label="Example with label" style="width: ${user.player.puntos}%;" aria-valuenow="${user.player.puntos}" aria-valuemin="0" aria-valuemax="100">${user.player.puntos}%</div>
               </div>
             </td>
             <th scope="row">${user.player.puntos}</th>

@@ -42,7 +42,7 @@ const PanelRegister = () => {
 
 
           <div class="input-group mb-3">
-            <input type="file" class="form-control" id="image-data">
+            <input type="file" class="form-control" id="image-data" name="image">
           </div>
 
           <div class="input-group mb-3">
@@ -63,7 +63,7 @@ const PanelRegister = () => {
           </div>
           <div id="pass-error-cf"></div>
 
-          <div class="d-grid gap-2 d-md-flex justify-content-center mt-5">
+          <div id="button-register" class="d-grid gap-2 d-md-flex justify-content-center mt-5">
             <input type="button" id="button-submit-register" class="btn btn-primary btn-lg" value="Enviar">
           </div>
 

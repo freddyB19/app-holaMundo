@@ -1,6 +1,5 @@
 import Views from "../Views"
 
-
 class ValidationLoginResponse {
   static async apply(form){
     return  await Views.loginView(form);

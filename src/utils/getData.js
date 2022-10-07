@@ -3,37 +3,55 @@ const API = "http://127.0.0.1:8000"
 // action = {type: ... , paylod: {...}, url: ... }
 
 const getMethod = (action) => {
-  if(["create", "register", "login"].includes(action.type))
-    return "POST";
-  else if(["detail", "list"].includes(action.type))
-    return "GET";
-  return "PUT";
+  const methods = {
+    0: "POST",
+    1: "GET",
+    2: "PUT"
+  }
+  return methods[action.method];
 }
 
 const getUrlPath = (action) => {
-  let url = null;
-  if(["create", "list", "register", "login"].includes(action.type)){
-      if(action.type === "register" || action.type === "login" )
-        url = `/account${action.url}`;
-      else
-        url = `/game${action.url}`
-  } else if (["detail", "update", "delete"].includes(action.type)) {
-      url = `/game${action.url}${action.paylod.id}/`;
+  const api_account = {
+    "user": "/account",
   }
-  return url;
+  const api_game = {
+    "game": "/game",
+  }
+  if(action.type === "user" || action.type === "user-detail")
+    return (api_account[action.type]) ? `${api_account[action.type]}${action.url}` : `${"/account"}${action.url}${action.paylod.id}/`;
+  return (api_game[action.type]) ? `${api_game[action.type]}${action.url}` : `${"/game"}${action.url}${action.paylod.id}/`;
 }
+
+// let url = null;
+// if(["create", "list", "register", "login", "logout"].includes(action.type)){
+//     if(["register", "login", "logout"].includes(action.type))
+//       url = `/account${action.url}`;
+//     else
+//       url = `/game${action.url}`
+// } else if (["detail", "update", "delete"].includes(action.type)) {
+//     url = `/game${action.url}${action.paylod.id}/`;
+// }
+
 
 const getData = async (action) => {
   const options = {
     method: getMethod(action),
-    headers: {
-      'Content-type': 'application/json',
-    },
   }
-  if(options.method === "POST")
-    options.body = JSON.stringify(action.paylod);
-  else
-    options.paylod = JSON.stringify(action.paylod);
+
+  if(action.url === "/register/")
+    options.body = action.paylod;
+  else {
+    options.headers = {
+      'Content-type': 'application/json',
+    }
+    if(options.method === "POST")
+      options.body = JSON.stringify(action.paylod);
+    else
+      options.paylod = JSON.stringify(action.paylod);
+  }
+
+
 
   const url = `${API}${getUrlPath(action)}`
   return new Promise( async (resolve, reject) => {
@@ -46,14 +64,12 @@ const getData = async (action) => {
 
         return resolve(data);
       }
-      return reject(new Error("Error de la api: " + url));
+      return reject(new Error("Error de la api: 11" + url));
 
     } catch (e) {
-      reject(new Error("Error de la api asdasd: " + url));
+      reject(new Error("Error de la api asdasd: " + url + "\n " + e));
 
     }
-
-
 
   })
 }
