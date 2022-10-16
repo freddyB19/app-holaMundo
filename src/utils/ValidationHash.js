@@ -20,7 +20,8 @@ const VALIDHASH = [
 
   "nivel-avanzado/5",
   "nivel-avanzado/5/tipos-de-datos-avanzados-01/10",
-  "nivel-avanzado/5/poo-02/11"
+  "nivel-avanzado/5/subprogramas-02/13",
+  "nivel-avanzado/5/poo-03/11"
 
 ]
 

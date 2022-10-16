@@ -9,8 +9,9 @@ const NavHomeLogin = (item) => {
         <div class="col-lg-4 d-flex flex-nowrap">
            <div class="navbar-expand-md d-flex flex-column flex-shrink-0 p-3 text-bg-dark rounded-4" style="width: 280px; height: 470px;">
             <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
-              <svg class="bi pe-none me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
-              <span class="fs-4">Sidebar</span>
+              <!-- <svg class="bi pe-none me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg> -->
+              <img src="images/icono2.jpg" alt="" width="40" height="32" class="rounded bi pe-none me-2">
+              <span class="fs-4"><span class="text-warning">&lt;</span><span class="text-danger">Hola-Mundo</span><span class="text-warning">&#47;</span><span class="text-warning">&gt;</span></span>
             </a>
             <hr>
             <ul class="nav nav-pills flex-column mb-auto" id="pills-tab" role="tablist" aria-orientation="vertical">

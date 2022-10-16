@@ -57,14 +57,14 @@ const getData = async (action) => {
   return new Promise( async (resolve, reject) => {
     try {
       const response =  await fetch(url, options);
-      if(response.status !== 400){
+      if(response.status !== 400 && response.status !== 404){
         let data = "Success";
         if(response.status != 204)
           data = await response.json();
 
         return resolve(data);
       }
-      return reject(new Error("Error de la api: 11" + url));
+      return reject(new Error("Error de la api: 11  " + url));
 
     } catch (e) {
       reject(new Error("Error de la api asdasd: " + url + "\n " + e));

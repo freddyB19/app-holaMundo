@@ -49,15 +49,15 @@ const NavModuleSesion = () => {
     <nav class="navbar bg-light shadow-sm p-3 rounded" id="nav-module-sesion">
       <div class="container-fluid">
         <a class="navbar-brand" href="/">
-          <img src="#" alt="..." width="32" height="32"class="d-inline-block align-text-top rounded-circle me-2">
-          Menú
+          <img src="images/icono2.jpg" alt="..." width="40" height="32"class="d-inline-block align-text-top rounded me-2">
+          <span class="text-warning">&lt;</span><span class="text-danger">hola-mundo</span><span class="text-warning">&#47;</span><span class="text-warning">&gt;</span>
         </a>
         <button id="button-nav-two"class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
           <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><span class="text-warning">&lt;</span><span class="text-danger">Hola-Mundo</span><span class="text-warning">&#47;</span><span class="text-warning">&gt;</span></h5>
             <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
           </div>
           <div class="offcanvas-body">

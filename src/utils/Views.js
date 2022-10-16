@@ -69,6 +69,17 @@ class Views {
     });
     return response;
   }
+  static async ValidationEmailOrUsername(data){
+    let response = await getData({
+      type: "user",
+      method: 0,
+      paylod: data,
+      url: "/register/validated/"
+    });
+
+
+    return response;
+  }
 
 }
 

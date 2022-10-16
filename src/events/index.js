@@ -4,6 +4,7 @@ import navModuleTab from "./functions/navModuleTab";
 import logout from "./functions/logout";
 import login from "./functions/login";
 import register from "./functions/register";
+import validation from "./functions/validationUsernameAndEmailRegister";
 import accessInvalid from "./functions/accessInvalid";
 
 
@@ -17,6 +18,7 @@ const events = async () => {
   const formLogin  = document.querySelector("#form-login");
   const inputLoginEmail = document.querySelector("#floatingInputLoginEmail");
   const passwordLoginPassword = document.querySelector("#floatingPasswordLoginPassword");
+
 
 
   await document.querySelector("#app").addEventListener("click", (eve)=>{
@@ -46,11 +48,30 @@ const events = async () => {
 
   });
 
-  if(formRegister)
+  if(formRegister){
+    await document.querySelector("#username").addEventListener("change", async (eve) => {
+      if(eve.target.value.length >= 1 ){
+        if(await validation({"username": eve.target.value}))
+          console.log("No existe registro con este username");
+        else
+          console.log("Existe un registro con este username");
+      }
+    });
+    await document.querySelector("#email-register").addEventListener("change", async (eve) => {
+      if(eve.target.value.length >= 1 ){
+        if(await validation({"email": eve.target.value}))
+          console.log("No existe registro con este email");
+        else
+          console.log("Existe un registro con este email");
+      }
+    });
+
     await formRegister.addEventListener("click", (eve) => {
       if(eve.target.id == "button-submit-register")
         register(eve.target.parentElement.parentElement);
     });
+  }
+
 
   if(formLogin)
     await formLogin.addEventListener("click", async (eve) => {

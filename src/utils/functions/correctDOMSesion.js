@@ -1,15 +1,10 @@
+import sesions from "../sesions/sesions";
+
+
 const viewUserLogin = (user,item) => {
   let view = ``;
   if(user)
-    view = `
-      <div class="bg-light border rounded-3 py-3 mb-3">
-        <div class="card w-75 mx-auto">
-          <div class="card-body shadow-lg rounded">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-          </div>
-        </div>
-      </div>
-    `;
+    view = ` ${sesions[item.url]()} `;
   return view;
 }
 
@@ -43,8 +38,8 @@ const correctDOMSesion = (user, item) => {
         Introducción
       </div>
       <div class="card-body">
-        <h5 class="card-title">Special title treatment</h5>
-        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+        <h5 class="card-title">${item.title}</h5>
+        <p class="card-text">${item.introduccion}.</p>
       </div>
       <div class="card-footer text-muted shadow-lg bg-body">
         Sesión: ${item.num_sesion}
