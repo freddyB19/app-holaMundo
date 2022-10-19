@@ -159,12 +159,12 @@ const Pseudocodigo = () => {
                 <div class="card mx-auto w-75 shadow-lg">
                   <div class="row g-0">
                     <div class="col-md-4">
-                      <img src="images/tips.jpg" class="img-fluid rounded-start" alt="sugerencias">
+                      <img src="images/tips.jpg" class="img-fluid rounded-start w-100 h-100" alt="sugerencias">
                     </div>
                     <div class="col-md-8">
                       <div class="card-body">
                         <h5 class="card-title">Recordatorio</h5>
-                        <p class="card-text">Recuerdas cuando en la sesión pasada, <strong>Identificadores</strong>, del modulo <strong>Entidades Primitivas</strong>, se mencionó las <code>Palabras reservadas (o privadas)</code> .</p>
+                        <p class="card-text">Recuerdas cuando en la sesión pasada, <strong>Identificadores</strong>, del modulo <strong>Entidades Primitivas</strong>, se mencionó las <small>Palabras reservadas (o privadas)</small> .</p>
                         <p class="card-text">En este ejemplo notaras que algnas palabras como <span class="text-primary fw-bold">Proceso Escribir Leer</span>, entre otras, tiene un color diferente, resaltanto esta propiedad que forma parte de cada lenguaje de programación.</p>
                       </div>
                     </div>

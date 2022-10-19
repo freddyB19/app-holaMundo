@@ -30,7 +30,7 @@ const register = (form) => {
       form.querySelector("#button-register").innerHTML = `
         <button class="btn btn-primary btn-lg" type="button" disabled>
           <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
-          Loading...
+          Cargando...
         </button>
       `;
       try {

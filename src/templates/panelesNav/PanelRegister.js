@@ -21,7 +21,7 @@ const PanelRegister = () => {
           </div>
 
           <div class="input-group mb-3 position-relative">
-            <span class="input-group-text">@</span>
+            <span class="input-group-text fs-3">@</span>
             <div class="form-floating">
               <input required type="email" class="form-control" id="email-register" placeholder="name@example.com">
               <label for="email-register">Email</label>
@@ -30,7 +30,7 @@ const PanelRegister = () => {
           </div>
 
           <div class="input-group mb-3 position-relative">
-            <span class="input-group-text">#</span>
+            <span class="input-group-text fs-3">#</span>
             <div class="form-floating">
               <input required type="text" pattern="[A-Za-z0-9_@#$]{3,}" aria-describedby="inputGroupPrepend" class="form-control" id="username" placeholder="Username">
               <label for="username">Username</label>
@@ -46,25 +46,25 @@ const PanelRegister = () => {
           </div>
 
           <div class="input-group mb-3">
-            <span class="input-group-text">*</span>
+            <span class="input-group-text fs-3">*</span>
             <div class="form-floating has-validation">
               <input required minlength="5" aria-describedby="inputGroupPrepend" type="password" class="form-control" id="floatingPasswordRegiPass" placeholder="Password">
-              <label for="floatingPasswordRegiPass">Password</label>
+              <label for="floatingPasswordRegiPass">Contraseña</label>
             </div>
           </div>
           <div id="pass-error"></div>
 
           <div class="input-group mb-3">
-            <span class="input-group-text">*</span>
+            <span class="input-group-text fs-3">*</span>
             <div class="form-floating">
               <input required minlength="5" type="password" class="form-control" id="floatingPasswordRegiPassConfi" placeholder="Password Confirmación">
-              <label for="floatingPasswordRegiPassConfi">Password Confirmación</label>
+              <label for="floatingPasswordRegiPassConfi">Contraseña Confirmación</label>
             </div>
           </div>
           <div id="pass-error-cf"></div>
 
           <div id="button-register" class="d-grid gap-2 d-md-flex justify-content-center mt-5">
-            <input type="button" id="button-submit-register" class="btn btn-primary btn-lg" value="Enviar">
+            <input type="button" id="button-submit-register" class="btn btn-primary btn-lg" value="Registrar">
           </div>
 
         </form>

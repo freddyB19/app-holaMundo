@@ -17,7 +17,18 @@ const Operadores = () => {
           Una operación de concatenación involucra dos o mas valores alafanuméricos o cadenas, cuyo contenido se va agregando al resultado final, evaluando de izquierda a derecha. Generalmente representamos esta operación con el operador +, aunque algunos lenguajes de programación usan un símbolo diferente
         </p>
         <p class="bg-dark text-center p-3 rounded">
-          <span class="text-warning">"Hola "</span> <span class="text-danger"> + </span> <span class="text-warning">"mundo"</span> <span class="text-light">dará como resultado</span> <span class="text-warning">"Hola mundo"</span>
+          <span class="text-warning">"Hola "</span> <span class="text-danger fs-5"> + </span> <span class="text-warning">"mundo"</span> <span class="text-light">dará como resultado</span> <span class="text-warning">"Hola mundo"</span>
+        </p>
+
+        <hr class="my-5">
+
+        <h4>Asignación</h4>
+        <p>
+          La funsión de este operador es asignar valores (Tipo de dato) a nuestras variables. <br>
+          Este operador en ocasiones, se considera una <strong>expresión</strong>. Este es un tema por ahora no incluiremos en tu aprendizaje.
+        </p>
+        <p class="bg-dark text-center p-3 rounded">
+          <span class="text-light">variable</span> <span class="text-danger fs-5"> <- </span> <span class="text-warning">"Hola mundo"</span>
         </p>
 
         <hr class="my-5">
@@ -57,6 +68,16 @@ const Operadores = () => {
               <th scope="row">4</th>
               <td>División</td>
               <td class="bg-dark text-center rounded"><span class="text-danger fs-4 fw-bold"> / </span></td>
+            </tr>
+            <tr>
+              <th scope="row">5</th>
+              <td>Potenciación </td>
+              <td class="bg-dark text-center rounded"><span class="text-danger fs-4 fw-bold"> ^ </span></td>
+            </tr>
+            <tr>
+              <th scope="row">6</th>
+              <td>Módulo <small>(resto de la división entera)</small></td>
+              <td class="bg-dark text-center rounded"><span class="text-danger fs-4 fw-bold"> % </span></td>
             </tr>
           </tbody>
         </table>
@@ -146,12 +167,12 @@ const Operadores = () => {
             <tr>
               <th scope="row">5</th>
               <td>Diferente</td>
-              <td class="bg-dark text-center rounded"><span class="text-danger fs-4 fw-bold"> != </span></td>
+              <td class="bg-dark text-center rounded"><span class="text-danger fs-4 fw-bold"> <> </span></td>
             </tr>
             <tr>
               <th scope="row">6</th>
               <td>Igual</td>
-              <td class="bg-dark text-center rounded"><span class="text-danger fs-4 fw-bold"> == </span></td>
+              <td class="bg-dark text-center rounded"><span class="text-danger fs-4 fw-bold"> = </span></td>
             </tr>
           </tbody>
         </table>
@@ -174,19 +195,22 @@ const Operadores = () => {
             <tr>
               <th scope="row">1</th>
               <td>Conjunción</td>
-              <td class="bg-dark text-center rounded"><span class="text-danger fs-4 fw-bold"> AND<span class="text-light fs-5">,</span>  & </span></td>
+              <td class="bg-dark text-center rounded"><span class="text-danger fs-4 fw-bold"> AND <span class="text-light fs-5">,</span>  & <span class="text-light fs-5">,</span> Y </span></td>
+
             </tr>
 
             <tr>
               <th scope="row">2</th>
               <td>Disyunción</td>
-              <td class="bg-dark text-center rounded"><span class="text-danger fs-4 fw-bold"> OR<span class="text-light fs-5">,</span>  | </span></td>
+              <td class="bg-dark text-center rounded"><span class="text-danger fs-4 fw-bold"> OR <span class="text-light fs-5">,</span>  | <span class="text-light fs-5">,</span> O </span></td>
+
             </tr>
 
             <tr>
               <th scope="row">3</th>
               <td>Negación</td>
-              <td class="bg-dark text-center rounded"><span class="text-danger fs-4 fw-bold"> NOT<span class="text-light fs-5">,</span> ~ </span></td>
+              <td class="bg-dark text-center rounded"><span class="text-danger fs-4 fw-bold"> NOT <span class="text-light fs-5">,</span> ~ <span class="text-light fs-5">,</span> No </span></td>
+
             </tr>
           </tbody>
         </table>
@@ -209,9 +233,9 @@ const Operadores = () => {
               <div class="modal-body">
                 <p>Los operadores relacionales se evalúan en el siguiente orden.</p>
                 <ul>
-                  <li class="bg-dark text-center rounded"><span class="text-danger fs-4 fw-bold"> NOT ! </span></li> <br>
-                  <li class="bg-dark text-center rounded"><span class="text-danger fs-4 fw-bold"> AND & </span></li> <br>
-                  <li class="bg-dark text-center rounded"><span class="text-danger fs-4 fw-bold"> OR | </span></li> <br>
+                  <li class="bg-dark text-center rounded"><span class="text-danger fs-4 fw-bold"> NOT No ~ </span></li> <br>
+                  <li class="bg-dark text-center rounded"><span class="text-danger fs-4 fw-bold"> AND Y & </span></li> <br>
+                  <li class="bg-dark text-center rounded"><span class="text-danger fs-4 fw-bold"> OR O | </span></li> <br>
                 </ul>
               </div>
               <div class="modal-footer">

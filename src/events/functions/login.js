@@ -17,7 +17,7 @@ const login = async (eve) => {
   form.querySelector("#button-login").innerHTML = `
     <button class="w-100 btn btn-lg btn-primary" type="button" disabled>
     <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
-    Loading...
+    Cargando...
   </button>
   `;
 
