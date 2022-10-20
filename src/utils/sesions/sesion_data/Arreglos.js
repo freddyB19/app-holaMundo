@@ -45,6 +45,13 @@ const Arreglos = () => {
             <li><strong>Bidimensionales</strong></li>
           </ul>
 
+          <div class="card alert alert-primary">
+            <div class="card-body">
+              <h5 class="card-title">Una nota sobre los arreglos y matrices</h5>
+              El primero elemento de una matriz y un arrelo se en cuentra en el indice <strong>0</strong>, <strong>no en el indice 1</strong>.
+            </div>
+          </div>
+
         </div>
       </div>
     </div>

@@ -9,6 +9,9 @@ import Condicionales from "./sesion_data/Condicionales";
 import Repetitivas from "./sesion_data/Repetitivas";
 import Arreglos from "./sesion_data/Arreglos";
 import TDatosAvanzados from "./sesion_data/TDatosAvanzados";
+import Subprogramas from "./sesion_data/Subprogramas";
+import Poo from "./sesion_data/POO";
+
 
 
 
@@ -24,8 +27,8 @@ const sesions = {
   "estructuras-repetitivas-03": Repetitivas,
   "arreglos-04": Arreglos,
   "tipos-de-datos-avanzados-01": TDatosAvanzados,
-  "subprogramas-02": "",
-  "poo-03": ""
+  "subprogramas-02": Subprogramas,
+  "poo-03": Poo
 };
 
 export default sesions;
