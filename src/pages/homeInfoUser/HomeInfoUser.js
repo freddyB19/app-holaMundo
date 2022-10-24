@@ -6,8 +6,9 @@ import correctDOMHomeInfoUser from "../functions/correctDOMHomeInfoUser";
 
 class ControlResponseHomeInfoUser extends ManagerControlResponse {
   static responseCorrect = async (view) => {
-    const user = DataUser.getLocal()
-    const userProgreso = await Views.detailProgresoPlayerView(user.id);
+    const user = DataUser.getLocal();
+    const user_token = DataUser.getSession();
+    const userProgreso = await Views.detailProgresoPlayerView(user.id, user_token.access);
     console.log(userProgreso);
     view.innerHTML = correctDOMHomeInfoUser(userProgreso);
   }

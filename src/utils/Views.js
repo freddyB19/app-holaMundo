@@ -21,21 +21,21 @@ class Views {
     return response;
   }
 
-  static async detailSesionView(id){
+  static async detailSesionView(id, token = null){
     let response = await getData({
       type: "game-detail",
       method: 1,
-      paylod: {id: id},
+      paylod: {id: id, token: token},
       url: "/sesion-detail/"
     });
     return response;
   }
 
-  static async detailProgresoPlayerView(id){
+  static async detailProgresoPlayerView(id, token = null){
     let response = await getData({
       type: "game-detail",
       method: 1,
-      paylod: {id: id},
+      paylod: {id: id, token: token},
       url: "/player/progreso-detail/"
     });
     return response;

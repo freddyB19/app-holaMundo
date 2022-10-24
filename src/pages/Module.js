@@ -4,6 +4,7 @@ import ManagersAccess from "../utils/ManagersAccess";
 import Views from "../utils/Views";
 import ManagerControlResponse from "../utils/ManagerControlResponse";
 import correctDOMModule from "../utils/functions/correctDOMModule";
+import error_loadData from "../utils/functions/error_loadData";
 
 
 import getHash from "../utils/getHash";
@@ -12,10 +13,17 @@ class ControlResponseModule extends ManagerControlResponse{
   static responseCorrect = async (view) => {
     const user = DataUser.getLocal();
     let hash = getHash();
-    let item = await Views.detailView(hash.id);
-    if (ManagersAccess.is_usserValidAccess(user, item))
-      ManagersAccess.create_alert();
-    view.innerHTML = correctDOMModule(item);
+
+    Views.detailView(hash.id)
+      .then(item => {
+        if (ManagersAccess.is_usserValidAccess(user, item))
+          ManagersAccess.create_alert();
+        view.innerHTML = correctDOMModule(item);
+      })
+      .catch(err => {
+        error_loadData(document.querySelector("#info-module"));
+      });
+
   }
 }
 

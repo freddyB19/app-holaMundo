@@ -3,18 +3,28 @@ import DataUser from "../utils/Login/DataUser";
 import Views from "../utils/Views";
 import ManagersAccess from "../utils/ManagersAccess";
 import ManagerControlResponse from "../utils/ManagerControlResponse";
+
 import correctDOMSesion from "../utils/functions/correctDOMSesion";
+import error_loadData from "../utils/functions/error_loadData";
 
 import getHash from "../utils/getHash";
 
 class ControlResponseSesion extends ManagerControlResponse {
   static responseCorrect = async (view) => {
     const user = DataUser.getLocal();
+    const user_token = DataUser.getSession();
     const data = getHash();
-    const item = await Views.detailSesionView(data.id);
-    if (ManagersAccess.is_usserValidAccess(user, item))
-      ManagersAccess.create_alert();
-    view.innerHTML = correctDOMSesion(user, item);
+
+    Views.detailSesionView(data.id, user_token.access)
+      .then(item => {
+        if (ManagersAccess.is_usserValidAccess(user, item))
+          ManagersAccess.create_alert();
+        view.innerHTML = correctDOMSesion(user, item);
+
+      })
+      .catch(err => {
+        error_loadData(document.querySelector("#info-sesion"));
+      })
   }
 }
 

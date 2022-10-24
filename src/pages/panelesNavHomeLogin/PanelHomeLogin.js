@@ -73,8 +73,9 @@ const PanelHomeLogin = () => {
     </p>
     <div class="collapse " id="collapseExample">
       <div class="card card-body d-flex justify-content-center">
-        <div class="alert alert-info" role="alert">
-          Para ver saber cual es tu siguiente paso <a href="#" class="alert-link">pulsa aquí</a>.
+        <div class="alert alert-danger" role="alert">
+          <!-- Para ver saber cual es tu siguiente paso <a href="#" class="alert-link">pulsa aquí</a>. -->
+          Por ahora esta función no se encuentra habilitada.
         </div>
       </div>
     </div>
