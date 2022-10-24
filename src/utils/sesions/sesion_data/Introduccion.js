@@ -43,8 +43,8 @@ const Introduccion = () => {
           ejecutar para hacer tareas complejas mediante pasos elementales</strong>.
         </p>
 
-        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-          Tips
+        <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+          Un poco más de información
         </button>
 
         <!-- Modal -->
@@ -100,22 +100,33 @@ const Introduccion = () => {
 
           <!-- Modal -->
           <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
+            <!--<div class="modal-dialog"> -->
+            <div class="modal-dialog modal-fullscreen">
               <div class="modal-content">
                 <div class="modal-header">
-                  <h1 class="modal-title fs-5" id="exampleModalLabel">¡¡Felicidades!!</h1>
+                  <!-- <h1 class="modal-title fs-5" id="exampleModalLabel">¡¡Felicidades!!</h1> -->
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Proximamente</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                <div class="col-lg-12 mx-auto text-center">
-                  <div class="container px-5">
-                    <img src="images/p1.jpg" class="img-fluid border rounded-3 shadow-lg mb-4" alt="Felicidades"  loading="lazy">
-                    <p class="lead mb-4">Has pasado a un siguiente nivel</p>
+                  <!--<div class="col-lg-12 mx-auto text-center">
+                    <div class="container px-5">
+                      <img src="images/p1.jpg" class="img-fluid border rounded-3 shadow-lg mb-4" alt="Felicidades"  loading="lazy">
+                      <p class="lead mb-4">Has pasado a un siguiente nivel</p>
+                    </div>
+                  </div>-->
+                  <div class="col-lg-6 mx-auto text-center">
+                    <div class="container px-5">
+                      <img src="images/pp.jpg" class="img-fluid border rounded-3 shadow-lg mb-4" alt="Error 404"  loading="lazy">
+                    </div>
+                    <h1 display-4 fw-bold font-monospace>¡Ohhh!</h1>
+                    <p class="lead mb-4">Por ahora no se encuentra disponible está modalidad.<br> Lo sentimos</p>
                   </div>
                 </div>
-                </div>
-                
+
                 <div class="modal-footer mx-auto">
-                  <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Guardar cambios</button>
+                  <!-- <button type="button" class="btn btn-primary" data-bs-dismiss="modal" disabled>Guardar cambios</button> -->
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
                 </div>
               </div>
             </div>

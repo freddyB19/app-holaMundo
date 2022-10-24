@@ -11,6 +11,10 @@ import accessInvalid from "./functions/accessInvalid";
 import validationLoginPassword from "./functions/validationPassLogin";
 import validationEmailLogin from "./functions/validationEmailLogin";
 
+import ValidationsUsername from "./classes/validationUsername";
+import ValidationsEmail from "./classes/validationEmail";
+
+
 
 
 const events = async () => {
@@ -52,17 +56,30 @@ const events = async () => {
     await document.querySelector("#username").addEventListener("change", async (eve) => {
       if(eve.target.value.length >= 1 ){
         if(await validation({"username": eve.target.value}))
+        {
+          ValidationsUsername.is_fine(document.querySelector("#username_validation"));
           console.log("No existe registro con este username");
-        else
+        }
+
+        else{
+          ValidationsUsername.is_bad(eve.target);
           console.log("Existe un registro con este username");
+        }
+
       }
     });
     await document.querySelector("#email-register").addEventListener("change", async (eve) => {
       if(eve.target.value.length >= 1 ){
-        if(await validation({"email": eve.target.value}))
+        if(await validation({"email": eve.target.value})){
+          ValidationsEmail.is_fine(document.querySelector("#email_validation"));
           console.log("No existe registro con este email");
-        else
+        }
+
+        else{
+          ValidationsEmail.is_bad(eve.target);
           console.log("Existe un registro con este email");
+        }
+
       }
     });
 

@@ -20,6 +20,9 @@ const PanelRegister = () => {
             </div>
           </div>
 
+          <div id="username_validation"></div>
+          <div id="email_validation"></div>
+
           <div class="input-group mb-3 position-relative">
             <span class="input-group-text fs-3">@</span>
             <div class="form-floating">

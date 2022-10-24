@@ -24,8 +24,10 @@
   "homepage": "https://github.com/freddyB19/app-holaMundo#readme",
   "devDependencies": {
     "@babel/core": "^7.19.1",
+    "@babel/preset-env": "^7.19.4",
     "autoprefixer": "^10.4.12",
     "babel-loader": "^8.2.5",
+    "babel-preset-env": "^1.7.0",
     "bootstrap": "^5.2.1",
     "copy-webpack-plugin": "^11.0.0",
     "css-loader": "^6.7.1",

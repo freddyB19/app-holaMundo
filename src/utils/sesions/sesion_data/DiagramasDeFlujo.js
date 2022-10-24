@@ -125,7 +125,12 @@ const DiagramasDeFlujo = () => {
                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                  ...
+                  <div class="col-lg-6 mx-auto text-center w-75">
+                    <div class="container">
+                      <img src="images/simbol_DF.png" class="img-fluid border rounded-3 shadow-lg mb-4" alt="Ejemplo de tabla de multiplicar en pseudocódigo"  loading="lazy">
+                    </div>
+                  </div>
+
                 </div>
                 <div class="modal-footer">
                   <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>

@@ -4,7 +4,7 @@ const games = () => {
       <div class="card w-75 mx-auto mb-3">
         <div class="card-body shadow-lg rounded">
           <p> Es momento de ponerte aprueba, comencemos</p>
-          <div class="mx-auto">
+          <div class="mx-auto text-center">
             <button type="button" class="mx-auto btn btn-success" data-bs-toggle="modal" data-bs-target="#game">
               Inicio
             </button>

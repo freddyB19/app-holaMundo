@@ -7,7 +7,7 @@ const Identificadores = () => {
         <div class="card-body shadow-lg rounded">
           <p>
             Al asignar nombres (identificadores) a variables, constantes y
-            procedimientos (subprogramas, más adelante hablaremos de eso.) se deben tener en cuenta algunas:
+            procedimientos (<em>subprogramas, más adelante hablaremos de eso</em>.) se deben tener en cuenta algunas reglas:
           </p>
           <ul class="list-group w-75 mx-auto my-3 shadow">
             <li class="list-group-item">
@@ -74,7 +74,7 @@ const Identificadores = () => {
           </ul>
           <p>
             El tipo de nombre –identificadores- que se asigne a
-            variables, constantes y procedimientos <strong>es muy
+            variables, constantes y subprogramas <strong>es muy
             importante</strong>.
           </p>
         </div>

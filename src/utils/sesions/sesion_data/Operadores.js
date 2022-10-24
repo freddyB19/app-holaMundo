@@ -24,8 +24,8 @@ const Operadores = () => {
 
         <h4>Asignación</h4>
         <p>
-          La funsión de este operador es asignar valores (Tipo de dato) a nuestras variables. <br>
-          Este operador en ocasiones, se considera una <strong>expresión</strong>. Este es un tema por ahora no incluiremos en tu aprendizaje.
+          La funsión de este operador es asignar valores (<strong>Tipo de dato</strong>) a nuestras variables. <br>
+          Este operador en ocasiones, se considera una <strong>expresión</strong>. Este es un tema que por ahora no incluiremos en tu aprendizaje.
         </p>
         <p class="bg-dark text-center p-3 rounded">
           <span class="text-light">variable</span> <span class="text-danger fs-5"> <- </span> <span class="text-warning">"Hola mundo"</span>
@@ -94,6 +94,37 @@ const Operadores = () => {
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
               <div class="modal-body">
+                <p>
+                  Primero, hablemos de las expresiones.
+                </p>
+                <div class="card mb-3">
+                  <div class="card-body">
+                    <h5 class="card-title">¿Qué es una Expresión?</h5>
+                    <strong>Las expresiones</strong> son combinaciones de constantes, variables, símbolos de operación, y paréntesis. Por ejemplo: <code>a + (b + 3) / c</code>.
+                  </div>
+                </div>
+                <div class="card mb-3">
+                  <div class="card-body">
+                    Cada expresión resulta en un valor que se determina al evaluar las operaciones indicadas usando los valores de las variables y constantes implicadas.
+                  </div>
+                </div>
+
+                <div class="card mb-3">
+                  <div class="card-body">
+                    <p>
+                      Según sea el tipo de datos que manipulan, las expresiones se clasifican en:
+                    </p>
+                    <ul class="list-group mx-auto shadow-sm mb-3">
+                      <li class="list-group-item list-group-item-info">Aritméticas.</li>
+                      <li class="list-group-item">Relacionales.</li>
+                      <li class="list-group-item list-group-item-info">Lógicas.</li>
+                      <li class="list-group-item">De concatenación.</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <hr class="mt-5">
+
                 <p>
                   Las operaciones aritméticas deben evaluarse de acuerdo a la importancia del operador, es decir, de acuerdo a su prioridad, de la siguiente forma:
                 </p>
@@ -216,7 +247,7 @@ const Operadores = () => {
         </table>
 
         <p class = "alert alert-info">
-          Hay que aclarar que muchos de estos símbolos pueden ser diferentes dependiendo del lenguaje de programación.
+          <strong>¡¡Atención!!</strong> Muchos de estos símbolos pueden ser diferentes dependiendo del lenguaje de programación.
         </p>
 
         <button type="button" class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#tipsLógicos">
@@ -233,9 +264,9 @@ const Operadores = () => {
               <div class="modal-body">
                 <p>Los operadores relacionales se evalúan en el siguiente orden.</p>
                 <ul>
-                  <li class="bg-dark text-center rounded"><span class="text-danger fs-4 fw-bold"> NOT No ~ </span></li> <br>
-                  <li class="bg-dark text-center rounded"><span class="text-danger fs-4 fw-bold"> AND Y & </span></li> <br>
-                  <li class="bg-dark text-center rounded"><span class="text-danger fs-4 fw-bold"> OR O | </span></li> <br>
+                  <li class="bg-dark text-center text-light rounded"><span class="text-danger fs-4 fw-bold"> NOT </span>, <span class="text-danger fs-4 fw-bold"> No </span>, <span class="text-danger fs-4 fw-bold"> ~ </span></li> <br>
+                  <li class="bg-dark text-center text-light rounded"><span class="text-danger fs-4 fw-bold"> AND </span>, <span class="text-danger fs-4 fw-bold"> Y </span>, <span class="text-danger fs-4 fw-bold"> & </span></li> <br>
+                  <li class="bg-dark text-center text-light rounded"><span class="text-danger fs-4 fw-bold"> OR </span>, <span class="text-danger fs-4 fw-bold"> O </span>, <span class="text-danger fs-4 fw-bold"> | </span></li> <br>
                 </ul>
               </div>
               <div class="modal-footer">

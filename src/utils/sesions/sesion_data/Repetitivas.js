@@ -49,7 +49,7 @@ const Repetitivas = () => {
         <small>Repite: Un número determinado de veces </small> <br>
         <small>Repite también: Con un número determinado de iteraciones. </small>
 
-        <p>
+        <p class="mt-3">
           Los iteradores con un determinado número de iteraciones son aquellos en que el número de iteraciones se conoce antes de ejecutarse el ciclo. La forma de esta estructura es la siguiente:
         </p>
         <div class="text-bg-dark rounded fs-5 p-3">
