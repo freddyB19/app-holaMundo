@@ -14,9 +14,6 @@ const getDataForm = (form) => {
   formdata.append("password", form.querySelector("#floatingPasswordRegiPass").value);
   formdata.append("password2", form.querySelector("#floatingPasswordRegiPassConfi").value);
 
-  if(form.querySelector("#image-data").files[0])
-    formdata.append("image", form.querySelector("#image-data").files[0]);
-
   return formdata;
 }
 

@@ -43,11 +43,6 @@ const PanelRegister = () => {
           <div id="username-error"></div>
 
 
-
-          <div class="input-group mb-3">
-            <input type="file" class="form-control" id="image-data" name="image">
-          </div>
-
           <div class="input-group mb-3">
             <span class="input-group-text fs-3">*</span>
             <div class="form-floating has-validation">
