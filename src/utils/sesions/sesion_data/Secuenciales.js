@@ -9,14 +9,7 @@ const Secuenciales = () => {
           <p>
             La estructura de control
             secuencial es la más sencilla. También se la conoce
-            como <strong>estructura lineal</strong>. Se compone de instrucciones
-            que deben ejecutarse en forma consecutiva, una tras
-            otra, <strong>siguiendo una línea de flujo</strong>.
-          </p>
-          <p>
-            Solamente los
-            problemas muy sencillos pueden resolverse haciendo
-            uso únicamente de esta estructura.
+            como <strong>estructura lineal</strong>.
           </p>
           <p>
             Normalmente, la

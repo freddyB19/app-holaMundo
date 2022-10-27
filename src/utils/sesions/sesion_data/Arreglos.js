@@ -81,7 +81,7 @@ const Arreglos = () => {
           </p>
 
           <div class="text-bg-dark rounded fs-5 p-3 mb-3">
-            <p class="text-ligth"><span class="text-primary fw-bold">Para</span> i<span class="text-primary fw-bold"> <- </span> 1  <span class="text-primary fw-bold">Hasta</span> 10 <span class="text-primary fw-bold"> Hacer</span> </p>
+            <p class="text-ligth"><span class="text-primary fw-bold">Para</span> i<span class="text-primary fw-bold"> <- </span> 0  <span class="text-primary fw-bold">Hasta</span> 10 <span class="text-primary fw-bold"> Hacer</span> </p>
             <p class="text-ligth"><span style="margin-left: 40px;"><span class="text-primary fw-bold">Leer </span>vector <span class="text-warning fw-bold">[</span> i <span class="text-warning fw-bold">]</span> </span></p>
             <p class="text-ligth"><span class="text-primary fw-bold">FinPara</span></p>
           </div>
@@ -90,7 +90,7 @@ const Arreglos = () => {
             Para mostrar su contenido:
           </p>
           <div class="text-bg-dark rounded fs-5 p-3 mb-3">
-            <p class="text-ligth"><span class="text-primary fw-bold">Para</span> i<span class="text-primary fw-bold"> <- </span> 1  <span class="text-primary fw-bold">Hasta</span> 10 <span class="text-primary fw-bold"> Hacer</span> </p>
+            <p class="text-ligth"><span class="text-primary fw-bold">Para</span> i<span class="text-primary fw-bold"> <- </span> 0  <span class="text-primary fw-bold">Hasta</span> 10 <span class="text-primary fw-bold"> Hacer</span> </p>
             <p class="text-ligth"><span style="margin-left: 40px;"><span class="text-primary fw-bold">Escribir </span>vector <span class="text-warning fw-bold">[</span> i <span class="text-warning fw-bold">]</span> </span></p>
             <p class="text-ligth"><span class="text-primary fw-bold">FinPara</span></p>
           </div>
@@ -124,8 +124,8 @@ const Arreglos = () => {
           </p>
 
           <div class="text-bg-dark rounded fs-5 p-3 mb-3">
-            <p class="text-ligth"><span class="text-primary fw-bold">Para</span> i<span class="text-primary fw-bold"> <- </span> 1  <span class="text-primary fw-bold">Hasta</span> 5 <span class="text-primary fw-bold"> Hacer</span> </p>
-            <p class="text-ligth"><span style="margin-left: 40px;"><span class="text-primary fw-bold">Para</span> j<span class="text-primary fw-bold"> <- </span> 1  <span class="text-primary fw-bold">Hasta</span> 5 <span class="text-primary fw-bold"> Hacer</span></span> </p>
+            <p class="text-ligth"><span class="text-primary fw-bold">Para</span> i<span class="text-primary fw-bold"> <- </span> 0  <span class="text-primary fw-bold">Hasta</span> 5 <span class="text-primary fw-bold"> Hacer</span> </p>
+            <p class="text-ligth"><span style="margin-left: 40px;"><span class="text-primary fw-bold">Para</span> j<span class="text-primary fw-bold"> <- </span> 0  <span class="text-primary fw-bold">Hasta</span> 5 <span class="text-primary fw-bold"> Hacer</span></span> </p>
 
             <p class="text-ligth"><span style="margin-left: 80px;"><span class="text-primary fw-bold">Escribir </span>matriz <span class="text-warning fw-bold">[</span> i <span class="text-warning fw-bold">] </span><span class="text-warning fw-bold">[</span> j <span class="text-warning fw-bold">]</span> </span></p>
             <p class="text-ligth"><span style="margin-left: 40px;"><span class="text-primary fw-bold">FinPara</span></span> </p>
@@ -136,8 +136,8 @@ const Arreglos = () => {
             Para mostrar su contenido:
           </p>
           <div class="text-bg-dark rounded fs-5 p-3 mb-3">
-            <p class="text-ligth"><span class="text-primary fw-bold">Para</span> i<span class="text-primary fw-bold"> <- </span> 1  <span class="text-primary fw-bold">Hasta</span> 5 <span class="text-primary fw-bold"> Hacer</span> </p>
-            <p class="text-ligth"><span style="margin-left: 40px;"><span class="text-primary fw-bold">Para</span> j<span class="text-primary fw-bold"> <- </span> 1  <span class="text-primary fw-bold">Hasta</span> 5 <span class="text-primary fw-bold"> Hacer</span></span> </p>
+            <p class="text-ligth"><span class="text-primary fw-bold">Para</span> i<span class="text-primary fw-bold"> <- </span> 0  <span class="text-primary fw-bold">Hasta</span> 5 <span class="text-primary fw-bold"> Hacer</span> </p>
+            <p class="text-ligth"><span style="margin-left: 40px;"><span class="text-primary fw-bold">Para</span> j<span class="text-primary fw-bold"> <- </span> 0  <span class="text-primary fw-bold">Hasta</span> 5 <span class="text-primary fw-bold"> Hacer</span></span> </p>
 
             <p class="text-ligth"><span style="margin-left: 80px;"><span class="text-primary fw-bold">Escribir </span>matriz <span class="text-warning fw-bold">[</span> i <span class="text-warning fw-bold">] </span><span class="text-warning fw-bold">[</span> j <span class="text-warning fw-bold">]</span> </span></p>
             <p class="text-ligth"><span style="margin-left: 40px;"><span class="text-primary fw-bold">FinPara</span></span> </p>

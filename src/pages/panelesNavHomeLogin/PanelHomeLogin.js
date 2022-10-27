@@ -2,6 +2,22 @@ import DataUser from "../../utils/Login/DataUser";
 import formatearFecha from "../../utils/functions/formatearFecha";
 
 
+const view_progreso = (puntos) => {
+  if(puntos <= 10)
+    return `<div class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar" aria-label="Example with label" style="width: 10%;" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">10%</div>`;
+  else if(puntos >= 10 && puntos < 25)
+    return `<div class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar" aria-label="Example with label" style="width: 25%;" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">25%</div>`;
+  else if(puntos >= 25 && puntos < 50)
+    return `<div class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar" aria-label="Example with label" style="width: 50%;" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">50%</div>`;
+  else if(puntos >= 50 && puntos < 75)
+    return `<div class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar" aria-label="Example with label" style="width: 75%;" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">75%</div>`;
+  else if(puntos >= 75 && puntos < 90)
+    return `<div class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar" aria-label="Example with label" style="width: 90%;" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">90%</div>`;
+  else if(puntos >= 90 && puntos < 100)
+    return `<div class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar" aria-label="Example with label" style="width: 100%;" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">100%</div>`;
+}
+
+
 const PanelHomeLogin = () => {
   const user = DataUser.getLocal();
   const view = `
@@ -55,7 +71,8 @@ const PanelHomeLogin = () => {
           <tr>
             <td>
               <div class="progress" style="height: 20px;">
-                <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar" aria-label="Example with label" style="width: ${user.player.puntos}%;" aria-valuenow="${user.player.puntos}" aria-valuemin="0" aria-valuemax="100">${user.player.puntos}%</div>
+                ${view_progreso(user.player.puntos)}
+                <!-- <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar" aria-label="Example with label" style="width: ${user.player.puntos}%;" aria-valuenow="${user.player.puntos}" aria-valuemin="0" aria-valuemax="100">${user.player.puntos}%</div>-->
               </div>
             </td>
             <th scope="row">${user.player.puntos}</th>
