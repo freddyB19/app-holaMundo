@@ -1,4 +1,4 @@
-const API = "https://backend-hola-mundo.onrender.com" //https://backend-hola-mundo.onrender.com
+const API = "https://app-hola-mundo.onrender.com"
 
 // action = {type: ... , paylod: {...}, url: ... }
 
