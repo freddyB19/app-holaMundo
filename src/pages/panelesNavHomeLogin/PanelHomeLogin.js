@@ -25,7 +25,11 @@ const PanelHomeLogin = () => {
         <div class="bg-primary bg-gradient bg-opacity-50 py-3 d-flex justify-content-between rounded-4">
           <div class="d-flex justify-content-start ">
             <div class="d-flex align-items-center">
-              <img src="${user.image}" alt="" width="72" height="72" class="rounded-circle me-2 mx-3">
+              <img src="${
+                (user.image)
+                ? `${user.image}`
+                : `images/p2.jpg`
+              }" alt="" width="72" height="72" class="rounded-circle me-2 mx-3">
               <span class="">@${user.username}</span>
             </div>
           </div>

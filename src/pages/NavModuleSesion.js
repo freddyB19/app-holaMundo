@@ -7,7 +7,11 @@ const viewUserLogin = (user) =>{
     view = `
       <li class="nav-item dropdown">
         <a class="d-flex align-items-center nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-          <img src="${user.image}" alt="Imagen del perfil del usuario" width="32" height="32" class="rounded-circle me-2">
+          <img src="${
+            (user.image)
+            ? `${user.image}`
+            : `images/p2.jpg`
+          }" alt="Imagen del perfil del usuario" width="32" height="32" class="rounded-circle me-2">
           <strong>@${user.username}</strong>
         </a>
         <ul class="dropdown-menu">
@@ -64,9 +68,6 @@ const NavModuleSesion = () => {
             <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="/">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
               </li>
               ${viewUserLogin(user)}
 

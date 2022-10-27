@@ -2,7 +2,7 @@ const cardModuleLogin = (item) => {
   const view = `
 
       <div class="col">
-        <div class="card rounded-4 h-100">
+        <div class="card rounded-4" style="height:345px;">
           <img src="${item.image}" class="card-img-top h-50" alt="${item.title}">
           <div class="card-body">
             <h5 class="card-title">${item.title}</h5>

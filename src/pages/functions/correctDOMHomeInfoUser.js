@@ -19,14 +19,14 @@ const correctDOMHomeInfoUser = (item) => {
                 : `<p class="card-text mb-auto">Aquí obtuviste un total de ${info.puntos} puntos.</p>`
               }
 
-              <a href="#" class="stretched-link">Continue reading</a>
+              <!--<a href="#" class="stretched-link">Continue reading</a>-->
             </div>
           </div>
         </div>
       `
     ).join("")}
     </div>
-    <hr class="mt-3">
+    <div class="mt-3"></div> 
   </div>
   `;
   return view;
