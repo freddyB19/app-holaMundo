@@ -16,8 +16,8 @@ class ControlResponseModule extends ManagerControlResponse{
 
     Views.detailView(hash.id)
       .then(item => {
-        if (ManagersAccess.is_usserValidAccess(user, item))
-          ManagersAccess.create_alert();
+        // if (ManagersAccess.is_usserValidAccess(user, item))
+        //   ManagersAccess.create_alert();
         view.innerHTML = correctDOMModule(item);
       })
       .catch(err => {

@@ -17,8 +17,8 @@ class ControlResponseSesion extends ManagerControlResponse {
     if(user_token)
       Views.detailSesionView(data.id, user_token.access)
         .then(item => {
-          if (ManagersAccess.is_usserValidAccess(user, item))
-            ManagersAccess.create_alert();
+          // if (ManagersAccess.is_usserValidAccess(user, item))
+          //   ManagersAccess.create_alert();
           view.innerHTML = correctDOMSesion(user, item);
 
         })
