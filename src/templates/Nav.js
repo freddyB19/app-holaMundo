@@ -8,7 +8,7 @@ const Nav = () => {
     <div class="container-fluid py-3">
       <nav>
         <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
-          <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Home</button>
+          <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Inicio</button>
           <button class="nav-link" id="nav-module-tab" data-bs-toggle="tab" data-bs-target="#nav-module" type="button" role="tab" aria-controls="nav-module" aria-selected="false">Modulos</button>
           <button class="nav-link" id="nav-registro-tab" data-bs-toggle="tab" data-bs-target="#nav-registro" type="button" role="tab" aria-controls="nav-registro" aria-selected="false">Registro</button>
           <button class="nav-link" id="nav-login-tab" data-bs-toggle="tab" data-bs-target="#nav-login" type="button" role="tab" aria-controls="nav-login" aria-selected="false">Login</button>

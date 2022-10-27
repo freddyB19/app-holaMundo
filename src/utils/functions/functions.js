@@ -1,9 +1,11 @@
+import image from "./img_card";
+
 const buildcard = (item) => {
   const card = `
     <div class="card mt-5 mb-3">
       <div class="row g-0">
         <div class="col-md-4 ">
-          <img src="${item.image}" class="img-fluid rounded-start h-100" alt="...">
+          <img src="images/modulo_sesion/${image[item.id]}" class="img-fluid rounded-start h-100" alt="...">
         </div>
         <div class="col-md-8">
           <div class="card-body">

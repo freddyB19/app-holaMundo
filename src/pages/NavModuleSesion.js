@@ -7,11 +7,6 @@ const viewUserLogin = (user) =>{
     view = `
       <li class="nav-item dropdown">
         <a class="d-flex align-items-center nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-          <img src="${
-            (user.image)
-            ? `${user.image}`
-            : `images/p2.jpg`
-          }" alt="Imagen del perfil del usuario" width="32" height="32" class="rounded-circle me-2">
           <strong>@${user.username}</strong>
         </a>
         <ul class="dropdown-menu">
@@ -30,10 +25,10 @@ const userToLogin = (user) => {
     <hr class="mb-3">
       <form class="row row-cols-lg-auto g-3 align-items-center" id="form-login">
         <div class="col-12">
-          <input required type="email" class="form-control" id="floatingInputLoginEmail" placeholder="name@example.com">
+          <input required type="email" class="form-control" id="floatingInputLoginEmail" placeholder="nombre@example.com">
         </div>
         <div class="col-12">
-          <input disabled required type="password" class="form-control" id="floatingPasswordLoginPassword" placeholder="Password">
+          <input disabled required type="password" class="form-control" id="floatingPasswordLoginPassword" placeholder="Contraseña">
         </div>
         <div class="col-12">
           <div id="login-validation"></div>
@@ -67,7 +62,7 @@ const NavModuleSesion = () => {
           <div class="offcanvas-body">
             <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="/">Home</a>
+                <a class="nav-link active" aria-current="page" href="/">Inicio</a>
               </li>
               ${viewUserLogin(user)}
 

@@ -25,12 +25,7 @@ const PanelHomeLogin = () => {
         <div class="bg-primary bg-gradient bg-opacity-50 py-3 d-flex justify-content-between rounded-4">
           <div class="d-flex justify-content-start ">
             <div class="d-flex align-items-center">
-              <img src="${
-                (user.image)
-                ? `${user.image}`
-                : `images/p2.jpg`
-              }" alt="" width="72" height="72" class="rounded-circle me-2 mx-3">
-              <span class="">@${user.username}</span>
+              <span class="mx-3">@${user.username}</span>
             </div>
           </div>
 
@@ -46,7 +41,7 @@ const PanelHomeLogin = () => {
               <th scope="col">Nombre</th>
               <th scope="col">Apellido</th>
               <th scope="col">Fecha de registro</th>
-              <th scope="col">Fecha de tu ultimo acceso</th>
+              <th scope="col">Fecha de acceso</th>
 
             </tr>
           </thead>

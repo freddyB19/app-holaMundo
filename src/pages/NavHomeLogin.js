@@ -7,7 +7,7 @@ const NavHomeLogin = (item) => {
   <nav class="">
     <ul class="nav nav-pills mb-3 justify-content-center" id="pills-tab" role="tablist">
       <li class="nav-item" role="presentation">
-        <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Home</button>
+        <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Inicio</button>
       </li>
       <li class="nav-item" role="presentation">
         <button class="nav-link" id="pills-module-tab" data-bs-toggle="pill" data-bs-target="#pills-module" type="button" role="tab" aria-controls="pills-module" aria-selected="false">Modulos</button>
@@ -23,11 +23,6 @@ const NavHomeLogin = (item) => {
 
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle d-flex align-items-center" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">
-          <img src="${
-            (item.image)
-            ? `${item.image}`
-            : `images/p2.jpg`
-          }" alt="Imagen del perfil del usuario ${item.name} ${item.last_name}" width="32" height="32" class="rounded-circle me-2">
           <strong>@${item.username}</strong>
         </a>
         <ul class="dropdown-menu">

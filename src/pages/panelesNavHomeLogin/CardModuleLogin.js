@@ -1,9 +1,10 @@
+import image from "../../utils/functions/img_card";
 const cardModuleLogin = (item) => {
   const view = `
 
       <div class="col">
         <div class="card rounded-4" style="height:345px;">
-          <img src="${item.image}" class="card-img-top h-50" alt="${item.title}">
+          <img src="images/modulo_sesion/${image[item.id]}" class="card-img-top h-50" alt="${item.title}">
           <div class="card-body">
             <h5 class="card-title">${item.title}</h5>
             <!-- <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> -->

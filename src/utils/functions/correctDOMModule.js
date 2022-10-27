@@ -1,8 +1,10 @@
+import image from "./img_portada";
+
 const correctDOMModule = (item) => {
   const view  = `
     <div class="bd-example mt-5">
       <div class="card text-bg-dark bg-transparent">
-        <img src="${item.image_portada}" class="card-img" alt="..." width="100%" height="270">
+        <img src="images/modulo_sesion/${image[item.id]}" class="card-img" alt="..." width="100%" height="270">
 
         <div class="card-img-overlay">
           <h5 class="card-title">${item.title}</h5>
