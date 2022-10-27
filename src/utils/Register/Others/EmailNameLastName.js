@@ -7,7 +7,7 @@ class ValidationNameAndLastNameAndEmailDOM {
       else input.parentElement.classList.add("mb-5");
 
       if(cod2 === "length-0") input.parentElement.querySelector(".invalid-tooltip").textContent = "Este campo es requerido";
-      else if(cod2 === "length-3" && input.type === "text") input.parentElement.querySelector(".invalid-tooltip").textContent = "La longitud del campo es muy corta [Min: 5]";
+      else if(cod2 === "length-3" && input.type === "text") input.parentElement.querySelector(".invalid-tooltip").textContent = "La longitud del campo es muy corta [Min: 3]";
 
 
       else if(cod2 === "invalid-data" && input.type === "text") input.parentElement.querySelector(".invalid-tooltip").textContent = "Solo puedes Ingresar Caracteres";

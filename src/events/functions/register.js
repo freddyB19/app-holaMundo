@@ -39,11 +39,11 @@ const register = (form) => {
       } finally {
         CleanRegisterForm.clear(form)
       }
-      form.querySelector("#button-register").innerHTML = `
-        <input type="button" id="button-submit-register" class="btn btn-primary btn-lg" value="Enviar">
-      `;
       CleanRegisterPassForm.clear(form);
     }
+    form.querySelector("#button-register").innerHTML = `
+      <input type="button" id="button-submit-register" class="btn btn-primary btn-lg" value="Enviar">
+    `;
   }, 3800);
 
 }
