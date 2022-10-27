@@ -18,7 +18,10 @@ class ControlResponseModule extends ManagerControlResponse{
       .then(item => {
         // if (ManagersAccess.is_usserValidAccess(user, item))
         //   ManagersAccess.create_alert();
-        view.innerHTML = correctDOMModule(item);
+        setTimeout(() => {
+          document.querySelector("#preload").innerHTML = "";
+          view.innerHTML = correctDOMModule(item);
+        }, 5000);
       })
       .catch(err => {
         error_loadData(document.querySelector("#info-module"));
@@ -30,13 +33,13 @@ class ControlResponseModule extends ManagerControlResponse{
 
 const preload = () => {
   setTimeout(() => {
-    document.querySelector("#preload").innerHTML = "";
     try {
       ControlResponseModule.responseCorrect(document.querySelector("#info-module"))
     } catch (e) {
       ControlResponseModule.responseFaild(document.querySelector("#info-module"));
     }
-  }, 5000);
+  }, 2000);
+
 }
 
 

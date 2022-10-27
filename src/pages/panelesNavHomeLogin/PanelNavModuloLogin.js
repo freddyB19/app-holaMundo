@@ -3,8 +3,8 @@ import cardModuleLogin from "./CardModuleLogin";
 
 
 const responseCorrect = async (view) => {
-  const cards =  await Views.allModules()
-  view.innerHTML = `
+  const cards =  await Views.allModules();
+  view.innerHTML = await `
     <div class="row row-cols-1 row-cols-md-2 g-3 mt-3">
       ${
         cards.map(card => cardModuleLogin(card)).join("")

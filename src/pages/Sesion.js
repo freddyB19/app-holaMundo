@@ -19,7 +19,10 @@ class ControlResponseSesion extends ManagerControlResponse {
         .then(item => {
           // if (ManagersAccess.is_usserValidAccess(user, item))
           //   ManagersAccess.create_alert();
-          view.innerHTML = correctDOMSesion(user, item);
+          setTimeout(() => {
+            document.querySelector("#preload-sesion").innerHTML = "";
+            view.innerHTML = correctDOMSesion(user, item);
+          }, 5000);
 
         })
         .catch(err => {
@@ -57,13 +60,13 @@ class ControlResponseSesion extends ManagerControlResponse {
 
 const preload = () => {
   setTimeout(() => {
-    document.querySelector("#preload-sesion").innerHTML = "";
     try {
       ControlResponseSesion.responseCorrect(document.querySelector("#info-sesion"))
     } catch (e) {
       ControlResponseSesion.responseFaild(document.querySelector("#info-sesion"))
     }
-  }, 5000);
+  }, 2000);
+  
 }
 
 const Sesion = () => {
