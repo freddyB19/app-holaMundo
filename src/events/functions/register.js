@@ -22,14 +22,15 @@ const register = (form) => {
 
   let vailidForm = new Register(form);
 
+  form.querySelector("#button-register").innerHTML = `
+    <button class="btn btn-primary btn-lg" type="button" disabled>
+      <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+      Cargando...
+    </button>
+  `;
+
   setTimeout(async () => {
     if(vailidForm.is_valid()){
-      form.querySelector("#button-register").innerHTML = `
-        <button class="btn btn-primary btn-lg" type="button" disabled>
-          <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
-          Cargando...
-        </button>
-      `;
       try {
         const response = await Views.RegisterUserView(getDataForm(form));
         registerRedirec();
