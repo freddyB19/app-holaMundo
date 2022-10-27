@@ -39,7 +39,7 @@ const userToLogin = (user) => {
           <div id="login-validation"></div>
         </div>
         <div class="col-12" id="button-login">
-          <button class="w-100 btn btn-lg btn-primary disabled" id="button-submit-login" type="button">Sign in</button>
+          <button class="w-100 btn btn-lg btn-primary disabled" id="button-submit-login" type="button">Login</button>
         </div>
       </form>
 

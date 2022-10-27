@@ -6,7 +6,7 @@ const correctDOMModule = (item) => {
 
         <div class="card-img-overlay">
           <h5 class="card-title">${item.title}</h5>
-          <p class="card-text">${item.introduccion}.</p>
+          <p class="card-text">${item.introduccion}</p>
           <p class="card-text"><small>Número de sesiones: ${item.levels.length}</small></p>
         </div>
       </div>
@@ -33,8 +33,12 @@ const correctDOMModule = (item) => {
               <div class="tab-content" id="nav-tabContent">
               ${item.levels.map((item, index) =>
                 (index < 1)
-                ? `<div class="tab-pane fade show active" id="list-${item.url}" role="tabpanel" aria-labelledby="list-${item.url}-list">${item.title}... <a href="${location.hash}/${item.url}/${item.id}">${location.hash}/${item.url}/${item.id}</a></div>`
-                : `<div class="tab-pane fade" id="list-${item.url}" role="tabpanel" aria-labelledby="list-${item.url}-list">${item.title}... <a href="${location.hash}/${item.url}/${item.id}">${location.hash}/${item.url}/${item.id}</a></div>`
+                ? `<div class="tab-pane fade show active alert alert-info mx-auto text-center" id="list-${item.url}" role="tabpanel" aria-labelledby="list-${item.url}-list">
+                    Ver más sobre <a href="${location.hash}/${item.url}/${item.id}" class="btn btn-outline-success">${item.title}</a>
+                  </div>`
+                : `<div class="tab-pane fade alert alert-info mx-auto text-center" id="list-${item.url}" role="tabpanel" aria-labelledby="list-${item.url}-list">
+                    Ver más sobre <a href="${location.hash}/${item.url}/${item.id}" class="btn btn-outline-success">${item.title}</a>
+                  </div>`
               ).join('')}
               </div>
             </div>
