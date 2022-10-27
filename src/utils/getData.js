@@ -1,4 +1,4 @@
-const API = "http://127.0.0.1:8000" //https://backend-hola-mundo.onrender.com
+const API = "https://backend-hola-mundo.onrender.com" //https://backend-hola-mundo.onrender.com
 
 // action = {type: ... , paylod: {...}, url: ... }
 
