@@ -9,8 +9,8 @@ class ControlResponseHomeInfoUser extends ManagerControlResponse {
     const user = DataUser.getLocal();
     const user_token = DataUser.getSession();
     const userProgreso = await Views.detailProgresoPlayerView(user.id, user_token.access);
-    console.log(userProgreso);
-    view.innerHTML = correctDOMHomeInfoUser(userProgreso);
+    //console.log(userProgreso);
+    view.innerHTML = await correctDOMHomeInfoUser(userProgreso);
   }
 
 }
@@ -24,7 +24,7 @@ const HomeInfoUser = () => {
     } catch (e) {
       ControlResponseHomeInfoUser.responseFaild(document.querySelector('#info-progreso-player'))
     }
-  }, 5000);
+  }, 2000);
   return ``;
 }
 
