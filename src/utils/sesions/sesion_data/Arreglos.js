@@ -218,7 +218,7 @@ const Arreglos = () => {
 
 
 
-    ${games()}
+    ${games("arreglos-04")}
   `;
   return view;
 }

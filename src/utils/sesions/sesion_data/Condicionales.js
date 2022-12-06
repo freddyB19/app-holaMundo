@@ -232,7 +232,7 @@ const Condicionales = () => {
 
 
 
-    ${games()}
+    ${games("estructuras-condicionales-02")}
   `;
   return view;
 }

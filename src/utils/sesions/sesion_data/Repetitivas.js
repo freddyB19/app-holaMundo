@@ -240,7 +240,7 @@ const Repetitivas = () => {
       </div>
     </div>
   </div>
-    ${games()}
+    ${games("estructuras-repetitivas-03")}
   `;
   return view;
 }

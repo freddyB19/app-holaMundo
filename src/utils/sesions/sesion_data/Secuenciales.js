@@ -105,7 +105,7 @@ const Secuenciales = () => {
         </div>
       </div>
     </div>
-    ${games()}
+    ${games("estructuras-secuenciales-01")}
   `;
   return view;
 }

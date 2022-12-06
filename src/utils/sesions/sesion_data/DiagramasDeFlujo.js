@@ -103,13 +103,24 @@ const DiagramasDeFlujo = () => {
       </div>
     </div>
 
+    <div class="bg-light border rounded-3 py-3 mb-3">
+      <div class="card w-75 mx-auto mb-3">
+        <div class="card-body shadow-lg rounded">
+          <p>
+            Esta imagen representa como se estructura un Diagrama de Flujo
+          </p>
+
+          <img src="images/simbol_DF.png" class="img-fluid border rounded-3 shadow-lg mb-4" alt="Diagrama de flujos"  loading="lazy">
+        </div>
+      </div>
+    </div>
 
     <div class="bg-light border rounded-3 py-3 mb-3">
       <div class="card w-75 mx-auto mb-3">
         <div class="card-body shadow-lg rounded">
         <div class="alert alert-warning" role="alert">
           <h4 class="alert-heading">¡¡Atención!!</h4>
-          <p>Antes de continuar te sugerimos que veas ésta información primero.</p>
+          <p>Antes de continuar te sugerimos que veas esta información primero.</p>
           <hr>
           <p class="mb-0">
             <button type="button" class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#tipsDF2">
@@ -127,7 +138,7 @@ const DiagramasDeFlujo = () => {
                 <div class="modal-body">
                   <div class="col-lg-6 mx-auto text-center w-75">
                     <div class="container">
-                      <img src="images/simbol_DF.png" class="img-fluid border rounded-3 shadow-lg mb-4" alt="Ejemplo de tabla de multiplicar en pseudocódigo"  loading="lazy">
+                      <img src="images/simbol_DF.png" class="img-fluid border rounded-3 shadow-lg mb-4" alt="SIMBOLOGÍA DE LOS DIAGRAMAS DE FLUJO"  loading="lazy">
                     </div>
                   </div>
 
@@ -144,7 +155,7 @@ const DiagramasDeFlujo = () => {
       </div>
     </div>
 
-    ${games()}
+    ${games("diagrama-de-flujo-01")}
   `;
 
   return view;

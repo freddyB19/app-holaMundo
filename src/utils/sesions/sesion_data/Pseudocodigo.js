@@ -205,7 +205,7 @@ const Pseudocodigo = () => {
     </div>
 
 
-    ${games()}
+    ${games("pseudocodigos-02")}
   `;
   return view;
 }

@@ -224,7 +224,7 @@ const Poo = () => {
 
 
 
-    ${games()}
+    ${games("poo-03")}
   `;
   return view;
 }

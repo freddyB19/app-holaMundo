@@ -81,7 +81,7 @@ const Identificadores = () => {
       </div>
     </div>
 
-    ${games()}
+    ${games("identificadores-01")}
   `;
   return view;
 }

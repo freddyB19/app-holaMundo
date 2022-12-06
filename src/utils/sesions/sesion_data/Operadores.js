@@ -279,7 +279,7 @@ const Operadores = () => {
     </div>
   </div>
 
-  ${games()}
+  ${games("operadores-03")}
   `;
   return view;
 }

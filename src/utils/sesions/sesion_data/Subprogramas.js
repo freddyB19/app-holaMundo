@@ -230,7 +230,7 @@ const Subprogramas = () => {
       </div>
     </div>
   </div>
-    ${games()}
+    ${games("subprogramas-02")}
   `;
   return view;
 }

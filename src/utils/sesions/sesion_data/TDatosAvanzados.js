@@ -254,7 +254,7 @@ const TDatosAvanzados = () => {
         </div>
       </div>
     </div>
-    ${games()}
+    ${games("tipos-de-datos-avanzados-01")}
   `;
   return view;
 }

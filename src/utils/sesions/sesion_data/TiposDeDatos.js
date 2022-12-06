@@ -59,7 +59,7 @@ const TiposDeDatos = () => {
     </div>
   </div>
 
-  ${games()}
+  ${games("tipos-de-datos-02")}
 
   `;
   return view;
